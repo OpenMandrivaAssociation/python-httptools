@@ -3,7 +3,7 @@
 
 Name:		python-httptools
 Version:	0.6.4
-Release:	1
+Release:	2
 Summary:	A Python binding for the nodejs HTTP parser
 URL:		https://pypi.org/project/httptools/
 License:	MIT
