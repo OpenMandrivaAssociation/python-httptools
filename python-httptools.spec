@@ -11,6 +11,7 @@ Group:		Development/Python
 Source0:	https://files.pythonhosted.org/packages/source/h/httptools/httptools-%{version}.tar.gz
 BuildSystem:	python
 
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(cython)
 BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python%{pyver}dist(pip)
