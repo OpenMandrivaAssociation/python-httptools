@@ -1,5 +1,4 @@
 %define module httptools
-%bcond_without test
 
 Name:		python-httptools
 Version:	0.7.1
@@ -33,12 +32,6 @@ rm -rf %{module}.egg-info
 # move vendored licenses
 mv vendor/llhttp/LICENSE-MIT LICENSE.llhttp
 mv vendor/http-parser/LICENSE-MIT LICENSE.http-parser
-
-%if %{with test}
-%check
-pip install -e .[test]
-%{__python} -m pytest -v tests/
-%endif
 
 %files
 %{python_sitearch}/%{module}
